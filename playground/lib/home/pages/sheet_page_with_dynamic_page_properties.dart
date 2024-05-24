@@ -19,7 +19,8 @@ class SheetPageWithDynamicPageProperties {
     return WoltModalSheetPage(
       id: pageId,
       hasSabGradient: false,
-      enableDrag: DynamicPageProperties.of(context)?.value.enableDrag ?? false,
+      enableCloseDrag:
+          DynamicPageProperties.of(context)?.value.enableCloseDrag ?? false,
       stickyActionBar: Builder(builder: (context) {
         return Padding(
           padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
@@ -54,7 +55,7 @@ class SheetPageWithDynamicPageProperties {
                               DynamicPageProperties.of(context);
                           dynamicPageModel?.value =
                               dynamicPageModel.value.copyWith(
-                            enableDrag: newValue,
+                            enableCloseDrag: newValue,
                           );
                           // Update the current page to reflect the changes.
                           WoltModalSheet.of(context).updateCurrentPage(

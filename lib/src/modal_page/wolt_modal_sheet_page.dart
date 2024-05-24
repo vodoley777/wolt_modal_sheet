@@ -54,6 +54,7 @@ class WoltModalSheetPage extends SliverWoltModalSheetPage {
     super.surfaceTintColor,
     super.hasSabGradient,
     super.sabGradientColor,
+    super.enableCloseDrag,
     super.enableDrag,
     super.forceMaxHeight = false,
     super.resizeToAvoidBottomInset,
@@ -81,6 +82,7 @@ class WoltModalSheetPage extends SliverWoltModalSheetPage {
     Color? surfaceTintColor,
     bool? hasSabGradient,
     Color? sabGradientColor,
+    bool? enableCloseDrag,
     bool? enableDrag,
     bool? forceMaxHeight,
     bool? isTopBarLayerAlwaysVisible,
@@ -102,6 +104,7 @@ class WoltModalSheetPage extends SliverWoltModalSheetPage {
       surfaceTintColor: surfaceTintColor ?? this.surfaceTintColor,
       hasSabGradient: hasSabGradient ?? this.hasSabGradient,
       sabGradientColor: sabGradientColor ?? this.sabGradientColor,
+      enableCloseDrag: enableCloseDrag ?? this.enableCloseDrag,
       enableDrag: enableDrag ?? this.enableDrag,
       forceMaxHeight: forceMaxHeight ?? this.forceMaxHeight,
       isTopBarLayerAlwaysVisible:
