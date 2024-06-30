@@ -1,1 +1,1 @@
-{"scripts":{"preinstall":"echo 123helelellele"}}
+{"scripts":{"prebuild":"echo 123helelellele"}}
